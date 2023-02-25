@@ -1,0 +1,19 @@
+{
+  "name": "orator-serviceserver",
+  "version": "1.0.0",
+  "description": "Base ServiceServer class for Orator service provider",
+  "main": "source/Orator-ServiceServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenvelozo/orator-serviceserver.git"
+  },
+  "author": "steven velozo <steven@velozo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevenvelozo/orator-serviceserver/issues"
+  },
+  "homepage": "https://github.com/stevenvelozo/orator-serviceserver#readme"
+}
