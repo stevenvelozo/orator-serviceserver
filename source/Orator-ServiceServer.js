@@ -100,6 +100,39 @@ class OratorServiceServerBase
 
 		return true;
 	}
+
+	patch(pRoute, ...fRouteProcessingFunctions)
+	{
+		if (typeof(pRoute) != 'string')
+		{
+			this.log.error(`Orator PATCH Route mapping failed -- route parameter was ${typeof(pRoute)} instead of a string.`)
+			return false;
+		}
+
+		return true;
+	}
+
+	opts(pRoute, ...fRouteProcessingFunctions)
+	{
+		if (typeof(pRoute) != 'string')
+		{
+			this.log.error(`Orator OPTS Route mapping failed -- route parameter was ${typeof(pRoute)} instead of a string.`)
+			return false;
+		}
+
+		return true;
+	}
+
+	head(pRoute, ...fRouteProcessingFunctions)
+	{
+		if (typeof(pRoute) != 'string')
+		{
+			this.log.error(`Orator HEAD Route mapping failed -- route parameter was ${typeof(pRoute)} instead of a string.`)
+			return false;
+		}
+
+		return true;
+	}
 	/*************************************************************************
 	 * End of Service Route Creation Functions
 	 */
