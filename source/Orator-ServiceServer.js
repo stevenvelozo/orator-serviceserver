@@ -34,6 +34,17 @@ class OratorServiceServerBase
 	 * End of Service Lifecycle Functions
 	 */
 
+	use(fHandlerFunction)
+	{
+		if (typeof(fHandlerFunction) != 'function')
+		{
+			this.log.error(`Orator USE global handler mapping failed -- parameter was expected to be a function with prototype function(Request, Response, Next) but type was ${typeof(fHandlerFunction)} instead of a string.`)
+			return false;
+		}
+
+		return true;
+	}
+
 
 	/*
 	 * Service Route Creation Functions

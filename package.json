@@ -1,6 +1,6 @@
 {
   "name": "orator-serviceserver",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Base ServiceServer class for Orator service provider",
   "main": "source/Orator-ServiceServer.js",
   "scripts": {
